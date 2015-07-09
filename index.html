@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+  <title>Windstream Code Challenge - PHP/AJAX example</title>
+  <link rel="stylesheet" type="text/css" media="all" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="/js/ajax-form.js"></script>
+</head>
+<body>
+  <div id="main-content">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h1>Windstream Code Challenge - PHP/AJAX example</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <form id="ajax-form" action="/php/submit.php">
+            <div class="form-group">
+              <input name="inp" type="text" class="form-control" placeholder="Input text here">
+            </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+      <div id="return" class="row collapse">
+        <div class="col-xs-12">
+          <h2>Return from PHP script (reversed input)</h2>
+        </div>
+        <div class="col-xs-12">
+          <blockquote id="retStr"></blockquote>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
